@@ -1,0 +1,15 @@
+.registration-wrapper {
+    border: 2px solid #d7dae0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 36px;
+    background-color: #e5e7ea;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sign-up {
+    color: #535456;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

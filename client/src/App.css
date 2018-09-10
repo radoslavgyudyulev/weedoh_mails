@@ -1,0 +1,86 @@
+.navbar-wrapper {
+  background-color: #444;
+  opacity: 0.9;
+  height: 75px; }
+
+.link {
+  font-weight: bold;
+  font-size: 20px; }
+
+.link:hover {
+  color: #FF4500; }
+
+.App {
+  background-image: url("b.jpg");
+  height: 450px;
+  margin-bottom: 40px; }
+
+.first-section-wrapper {
+  text-align: center;
+  height: 100%;
+  color: #fff;
+  padding: 10px;
+  margin-top: 55px; }
+  .first-section-wrapper .title {
+    font-size: 45px;
+    font-weight: 400; }
+  .first-section-wrapper hr {
+    width: 120px;
+    font-weight: 800;
+    background-color: #FF4500; }
+  .first-section-wrapper .subtitle {
+    font-size: 18px; }
+
+.second-section-wrapper {
+  margin-top: 20px; }
+  .second-section-wrapper .first-para {
+    border-right: 1px solid #d9d9d9;
+    height: 100%; }
+  .second-section-wrapper .first-para > h3 {
+    font-weight: bold;
+    font-size: 25px;
+    border-left: 3px solid #FF4500; }
+  .second-section-wrapper p {
+    font-size: 16px; }
+  .second-section-wrapper a {
+    border: 1px solid #FF4500;
+    font-size: 20px;
+    padding: 10px;
+    color: #444;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border-radius: 2px; }
+  .second-section-wrapper a:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: #FF4500;
+    transition: all 0.5s ease-out; }
+
+.send-email-wrapper {
+  text-align: center; }
+  .send-email-wrapper h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400; }
+  .send-email-wrapper button {
+    border: 1px solid green;
+    font-size: 20px;
+    padding: 10px;
+    color: #444;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border-radius: 2px;
+    background: #fff; }
+  .send-email-wrapper button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: green;
+    transition: all 0.5s ease-out; }
+
+.logo {
+  transform: rotate(-90deg);
+  position: absolute;
+  margin-top: 35vh;
+  margin-left: -55px;
+  position: fixed;
+  left: 0;
+  top: 0; }

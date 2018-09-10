@@ -1,0 +1,144 @@
+@import 'navbar';
+
+
+$primary-color : #444;
+$secondary-color : #FF4500;
+$contact-section-color : #d9d9d9;
+$font-color : #fff;
+
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+// Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+      @return #000;
+    } @else {
+      @return #fff;
+    }
+  }
+
+
+.navbar-wrapper {
+    background-color: #444;
+    opacity: 0.9;
+    height: 75px;
+}
+
+.link {
+    font-weight: bold;
+    font-size: 20px;
+    // color : $font-color;
+}
+
+.link:hover {
+    color: $secondary-color;
+}
+
+.App {
+    background-image: url('b.jpg');
+    height: 450px;
+    margin-bottom: 40px;
+}
+
+
+.first-section-wrapper {
+    text-align: center;
+    height: 100%;
+    color: #fff;
+    padding: 10px;
+    margin-top: 55px;
+
+    .title {
+        font-size: 45px;
+        font-weight: 400;
+    }
+
+    hr {
+        width: 120px;
+        font-weight: 800;
+        background-color: $secondary-color;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+}
+
+
+.second-section-wrapper {
+    margin-top: 20px;
+   
+    .first-para {
+        border-right: 1px solid $contact-section-color;
+        height: 100%;
+    }
+
+    .first-para > h3 {
+        font-weight: bold;
+        font-size: 25px;
+        border-left: 3px solid $secondary-color;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        border: 1px solid $secondary-color;
+        font-size: 20px;
+        padding: 10px;
+        color: $primary-color;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+
+    a:hover {
+        color: $font-color;
+        border: 1px solid $font-color;
+        background: $secondary-color;
+        @include easeOut();
+    }
+}
+
+
+.send-email-wrapper {
+    text-align: center;
+
+    h3 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+    }
+
+    button {
+        border: 1px solid green;
+        font-size: 20px;
+        padding: 10px;
+        color: $primary-color;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+        background: $font-color;
+    }
+
+    button:hover {
+        color: $font-color;
+        border: 1px solid $font-color;
+        background: green;
+        @include easeOut();
+    }
+}
+
+.logo {
+    transform: rotate(-90deg);
+    position:absolute;
+    margin-top: 35vh;
+    margin-left: -55px;
+    position: fixed;
+    left: 0;
+    top:0;
+}
+
